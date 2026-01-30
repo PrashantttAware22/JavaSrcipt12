@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html , body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right ,  #3BC1A8 , #249E94);
+}
+
+.container {
+    height: 25vw;
+    width: 40vw;
+    background-color: #ABDADC;
+    border-radius: 20px;
+    padding: 2vw 3vw;
+}
+
+.container h3 {
+    padding-top: 10px;
+    font-size: 2.5vw;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+    word-spacing: 5px;
+}
+
+input[type="text"] {
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 2.5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+input {
+    padding: 2vw 1vw ;
+    width: 100%;
+    font-size: 2vw;
+}
+
+.input-container {
+    border-radius: 10px;
+    margin: 2vw 0;
+    padding: 0vw 1vw;
+    border: 2px solid black;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-container i {
+    cursor: pointer;
+    font-size: 3vw;
+    opacity: .7;
+}
+
+.input-container i:hover {
+    opacity: 1;
+}
+
+
+
+button {
+    margin: 1vw 0;
+    padding: 10px 20px;
+    font-size: 2vw;
+    border: none;
+    border-radius: 10px;
+    background-color: #005461;
+    color: #fff;
+    transition: background-color ease-in 0.4s;
+}
+
+@media (max-width:600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 350px;
+        width: 350px;
+        padding: 4vw 4vw;
+    }
+    
+    .input-container {
+        margin: 5vw 3vw;
+        padding: 2vw;
+    }
+    input::placeholder {
+        font-size: 6vw;
+    }
+    .container h3 {
+        font-size: 6vw;
+        word-spacing: normal;
+    }
+    button {
+        font-size: 4vw;
+        margin: 0vw 3vw;
+    }
+    .input-container i {
+        font-size: 8vw;
+    }
+    input {
+        font-size: 5vw;
+    }
+}

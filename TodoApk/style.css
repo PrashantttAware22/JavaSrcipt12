@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.Container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-direction: column;
+  height: 100vh;
+  padding: 2vw 3vw;
+}
+
+.Container h2 {
+  text-align: center;
+  font-family: cursive ; 
+  font-size: 10vw;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+h2 span {
+  color: chocolate;
+}
+
+.Container input {
+  height: 5vw;
+  border-radius: 5px;
+  width: 40vw;
+  outline: none;
+  border: none;
+  padding: 1.7vw 2vw;
+  font-size: 3vw;
+  font-family: cursive;
+  border: 2px solid rgb(99, 99, 242);
+  text-transform: capitalize;
+  vertical-align: bottom;
+}
+
+.Container input::placeholder {
+  font-family: cursive;
+  font-size: 2w;
+  padding: 1vw 2vw;
+}
+
+#addbtn {
+  font-family: cursive;
+  color: black;
+  padding: .6vw 1.8vw;
+  border-radius: 50px;
+  font-size: 2.5vw;
+  border: none;
+  margin-left: 1vw;
+  border: 2px solid black;
+  vertical-align: baseline;
+}
+
+li {
+  min-width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1vw 2vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2vw;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+  border: 2px solid rgba(255, 0, 0, 0.3);
+  transition: background-color ease-in 0.2s;
+}
+
+li p {
+  flex-grow: 1;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: transparent;
+  background-color: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  * {
+    font-family: cursive;
+  }
+  .Container h2 {
+    font-size: 18vw;
+    font-family: cursive;
+    margin-bottom: 5rem;
+  }
+  .Container {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+  }
+  .Container input {
+    font-family: cursive;
+    min-width: 60vw;
+    height: 60px;
+    font-size: 6vw;
+    padding: 3vw vw;
+  }
+
+  .Container input::placeholder {
+    font-size: 6.5vw;
+    font-family: cursive;
+    font-weight: 900;
+    padding: 1vw 2vw;
+  }
+
+  .Container #addbtn {
+    vertical-align: bottom;
+    border: 2px solid black;
+    font-size: 10vw;
+    padding: 1.2vw 3vw;
+    background-color: transparent;
+    color:black ;
+  }
+  .Container li {
+    text-align: center;
+    padding: 2vw 0;
+    flex-direction: column;
+    min-width: 350px;
+    font-size: 6vw;
+  }
+}

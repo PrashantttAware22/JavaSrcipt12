@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simson Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="start">Start Game</button>
+    <p id="pressEnter">Press Enter to start the game !</p>
+    <div class="mainContainer">
+      <div class="left-part">
+        <div
+          class="top-left-pannel pannel yellow btn"
+          type="button"
+          id="yellow"
+        ></div>
+        <div
+          class="bottom-left-pannel pannel blue btn"
+          type="button"
+          id="blue"
+        ></div>
+      </div>
+      <div class="right-part">
+        <div
+          class="top-right-pannel pannel green btn"
+          type="button"
+          id="green"
+        ></div>
+        <div
+          class="bottom-right-pannel pannel red btn"
+          type="button"
+          id="red"
+        ></div>
+      </div>
+      <div class="center">
+        <p>Level: <span id="level">0</span></p>
+      </div>
+    </div>
+    <p id="result"></p>
+    <script src="app.js"></script>
+  </body>
+</html>

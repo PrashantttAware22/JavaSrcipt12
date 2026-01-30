@@ -1,0 +1,125 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.mainContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pannel {
+  height: 200px;
+  width: 200px;
+  border-top-left-radius: 100%;
+  margin: 2px 2px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.pannel:hover {
+  box-shadow: inset 0px 0px 3px black;
+}
+
+.top-left-pannel {
+  background-color: yellow;
+}
+
+.bottom-left-pannel {
+  transform: rotate(-90deg);
+  background-color: blue;
+}
+
+.top-right-pannel {
+  transform: rotate(90deg);
+  background-color: green;
+}
+
+.bottom-right-pannel {
+  transform: rotate(180deg);
+  background-color: red;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  position: absolute;
+  border-radius: 100%;
+  color: azure;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.gameflash {
+  background-color: azure;
+}
+
+.userflash {
+  background-color: azure;
+}
+#result {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  color: azure;
+  top: 1%;
+  right: 3%;
+}
+
+#start {
+    background-color: azure;
+    border: none;
+    border-radius: 0;
+    padding: 2vw 2vw;
+    font-size: 5vw;
+    display: none;
+}
+
+#pressEnter {
+    font-size: 1.5vw; 
+    color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media (max-width: 600px) {
+  body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    margin-top: 50px;
+  }
+  .pannel {
+    height: 150px;
+    width: 150px;
+  }
+  .center {
+    height: 150px;
+    width: 150px;
+  }
+  #result {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    color: azure;
+    top: 80%;
+    right: 100px;
+    font-size: 6vw;
+  }
+  #start {
+    display: block;
+  }
+  #pressEnter {
+    display: none;
+  }
+}

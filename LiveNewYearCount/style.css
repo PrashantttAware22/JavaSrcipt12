@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  align-items: center;
+  flex-direction: column;
+  background-color: slateblue;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4vw;
+}
+
+.year {
+  font-size: 5em;
+  color: white;
+  font-weight: bold;
+}
+
+.countdown {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  background-color: rgba(0,0,0,0.10);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 8vw 0 ;
+}
+
+.countdown div {
+    position: relative;
+    margin: 0 2rem;
+    font-size: 2.5rem;
+    font-weight: 500;  
+    margin-top: -50px; 
+    text-align: center;
+    width: 200px;
+}
+
+.countdown div::before {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    line-height: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 100%;
+    height: 35px;
+    font-size: 0.35em;
+}
+
+.countdown #day::before {
+    content: "days";
+}
+
+.countdown #min::before {
+    content: "minutes";
+}
+
+.countdown #sec::before {
+    content: "seconds";
+}
+
+.countdown #hour::before {
+    content: "hours";
+}
+
+@media (max-width:600px) {
+  h2 {
+    font-size: 5vw;
+  }
+  .countdown div {
+    text-align: center;
+    font-size: 7vw;
+  }
+  .countdown {
+    background-color: transparent;
+  }
+}
