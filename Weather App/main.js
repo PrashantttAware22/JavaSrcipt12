@@ -37,7 +37,7 @@ CityInput.addEventListener("keydown", (event) => {
 /* FETCH WEATHER APP DATA FROM ENDPOINT URL*/
 async function getFetchData(endPoint, city) {
   const apiUrl = `https://api.openweathermap.org/data/2.5/${endPoint}?q=${city}&appid=${ApiKey}&units=metric`;
-
+  
   //Units=matric is used to convert temperature into celsius format
 
   const response = await fetch(apiUrl);
